@@ -731,6 +731,32 @@
     Designed by <a href="https://absrecords.fr/">PANGA</a>
   </div>
 
+ <!-- Firebase -->
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAa2z7X5Lmum0siwXFs1OzTNengjNGlMIg",
+    authDomain: "radio-abs.firebaseapp.com",
+    projectId: "radio-abs",
+    storageBucket: "radio-abs.appspot.com",
+    messagingSenderId: "890639782800",
+    appId: "1:890639782800:web:766e679fb293629fe1d915",
+    measurementId: "G-ZQ89BNJ3TK"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
